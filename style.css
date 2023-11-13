@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+main{
+    height: 95vh;
+    display: grid;
+    place-content: center;
+}
+.container{
+    background-color: hsl(244, 38%, 16%);
+    width: 1050px;
+    height: 375px;
+    display: flex;
+    border-radius: .5rem;
+}
+.infContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: hsl(0, 0%, 100%);
+    width: 50%;
+    padding: 60px;
+    padding-right: 80px;
+}
+.titleInf{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+.paragraphInf{
+    margin: 20px 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.statesCard{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0;
+}
+.state h1{
+    font-size: 1.5rem;
+}
+.stateTitle{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: .75rem;
+}
+/*Container Image*/
+.imgContainer{
+    width: 50%;
+    background-image: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    border-radius: 0 10px 10px 0;
+}
+.maskImg{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277deg 99.14% 21.03%);
+    opacity: .5;
+    border-radius: 0 .5rem .5rem 0;
+    z-index: 100;
+}
+/*Footer*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 375px){
+    main{
+        height: 150vh;
+    }
+    .container{
+        margin: 30px 0;
+        background-color: hsl(244, 38%, 16%);
+        width: 300px;
+        height: 775px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .infContainer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 25px;
+        margin: 20px 0 0;
+    }
+    .titleInf{
+        font-size: 24px;
+    }
+    .paragraphInf{
+        margin: 20px 0;
+        color: hsla(0, 0%, 100%, 0.75);
+        line-height: 1.5rem;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+    }
+    .statesCard{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 20px 0;
+        height: 200px;
+    }
+    /*Container Image*/
+    .imgContainer{
+        width: 300px;
+        height: 100%;
+        background-image: url(images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
+        border-radius: .5rem .5rem 0 0;
+    }
+    .maskImg{
+        width: 100%;
+        height: 100%;
+        background-color: hsl(277deg 99.14% 21.03%);
+        opacity: .5;
+        border-radius: .5rem .5rem 0 0;
+    }
+}
